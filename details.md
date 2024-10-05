@@ -60,11 +60,21 @@ git commit -m "Initial commit"
 git branch -M main
 git remote add origin https://github.com/urname/urrepo.git
 `
+When you run git branch -M main, you are renaming the current branch (often the default master branch) to main.
 
 ## push your changes
 `
 git push -u origin main
 `
+The command `git push -u origin main` is used in Git to push your local `main` branch to the remote repository named `origin`. Here's a breakdown of what each part of the command does:
+
+- **`git push`**: This command uploads your local repository content to a remote repository.
+- **`-u` or `--set-upstream`**: This flag sets the upstream branch for the local branch. This means that future `git pull` or `git push` commands will default to this remote branch, simplifying your workflow.
+- **`origin`**: This is the default name for the remote repository. It could be any name you have set for your remote repository.
+- **`main`**: This is the name of the branch you are pushing. In many repositories, `main` is the default branch.
+
+So, when you run `git push -u origin main`, you are pushing your local `main` branch to the `main` branch on the remote repository `origin` and setting it up so that future pushes and pulls will automatically use this branch¹².
+
 
 ## verity your setup
 `
