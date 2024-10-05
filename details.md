@@ -57,6 +57,7 @@ git commit -m "Initial commit"
 2. copy the repo URL
 3. add the remote repo.
 `
+git branch -M main
 git remote add origin https://github.com/urname/urrepo.git
 `
 
